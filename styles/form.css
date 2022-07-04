@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Human-Sans';
+    src: url(../fonts/HumanSans-Light.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Info{
+    margin-top: 5%;
+    margin: auto;
+    justify-content: center;
+    background-color: red;
+    height: 10%;
+    width: 20%;
+    border: 1px;
+    border-radius:  5px;
+    border-color: #708090;
+}
+.gifcont{
+    width: 100%;
+    margin-top: 10%;
+}
+
+h1{
+    font-family: 'Human-Sans';
+}
+
+.gif{
+    display: flex;
+    margin: auto;
+    width:"100%"; 
+    height:"100%";
+}
+
