@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
     <title>
         qCurso.com
@@ -23,9 +22,6 @@
             <li>
                 <a href="#inicio">Inicio</a>
             </li>
-            <!-- <li>
-                <a href="#">Blog</a>
-            </li> -->
             <li>
                 <a href="#about">Sobre Nós</a>
             </li>
@@ -34,13 +30,56 @@
             </li>
         </ul>
         <div>
-            <button type="button">Cadastrar</button>
-            <button type="button">login</button>
+            <button class="login" onclick="showModal()">Cadastrar</button>
+            <button class="login" onclick="showModal2()">login</button>
         </div>
     </header>
+    <!-- modal redigter -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <form class="painel" id="formulario">
+                <span class="close-button" onclick="closeModal()">
+                    &times;
+                </span>
+                <div class="title">
+                    <h2>Cadastrar</h2>
+                </div>
+                <div class="textbox">
+                    <input type="text" placeholder="Digite seu nome" class="bigger" />
+                </div>
+                <div class="textbox">
+                    <input type="text" placeholder="Digite seu E-mail" class="bigger" />
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Crie uma Senha" class="bigger" />
+                    <input type="password" placeholder="Confirme a senha" class="bigger" />
+                </div>
+                <button type="button" class="btnNormal">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    <!-- modal login -->
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <form class="painel" id="formulario">
+                <span class="close-button" onclick="closeModal2()">
+                    &times;
+                </span>
+                <div class="title">
+                    <h2>Entrar</h2>
+                </div>
+                <div class="textbox">
+                    <input type="text" placeholder="Digite seu Email" class="bigger" />
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Digite sua Senha" class="bigger" />
+                </div>
+                <button type="button" class="btnNormal">Entrar</button>
+                <a href="#"><span>Esqueceu a senha?</span></a>
+            </form>
+        </div>
+    </div>
     <section class="main" id="inicio">
-
-
         <div class="init">
             <h1>Bem-Vindo ao<br></h1>
             <h1 class="title"><strong>QCurso.com<br></strong></h1>
@@ -49,24 +88,23 @@
         <div class="list">
             <div class="option">
                 <a href="html/form.html">
-                    <img src="icons/path.svg">
+                    <img src="icons/path.svg" class="imagem">
                     <h3>Crie sua trilha</h3>
                 </a>
             </div>
             <div class="option">
                 <a href="html/trilha.html">
-                    <img src="icons/books.svg">
+                    <img src="icons/books.svg" class="imagem">
                     <h3>Acesse seus conteudos</h3>
                 </a>
             </div>
             <div class="option">
                 <a href="html/cursos.html">
-                    <img src="icons/brain.svg">
+                    <img src="icons/brain.svg" class="imagem">
                     <h3>Cursos independentes</h3>
                 </a>
             </div>
         </div>
-        <!-- </div> -->
     </section>
     <section class="about" id="about">
         <div class="info">
@@ -96,6 +134,7 @@
             <img src="assets/Anderson.png">
         </div>
     </section>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
