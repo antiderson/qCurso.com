@@ -18,3 +18,9 @@ function closeModal2() {
     var element = document.getElementById("modal2");
     element.classList.remove("show-modal");
 }
+
+
+
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}

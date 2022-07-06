@@ -14,24 +14,30 @@
 </head>
 
 <body>
-    <header class="navigation">
+    <header>
         <div class="logo">
             <img src="assets/logo_transparent_background.svg">
         </div>
-        <ul class="nav">
-            <li>
-                <a href="#inicio">Inicio</a>
-            </li>
-            <li>
-                <a href="#about">Sobre Nós</a>
-            </li>
-            <li>
-                <a href="#info">Contato</a>
-            </li>
-        </ul>
-        <div>
-            <button class="login" onclick="showModal()">Cadastrar</button>
-            <button class="login" onclick="showModal2()">login</button>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Incio</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#info">Contato</a></li>
+                <button class="login" onclick="showModal()">Cadastrar</button>
+                <button class="login" onclick="showModal2()">login</button>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="#inicio">Incio</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#info">Contato</a></li>
+                <li><button class="login" onclick="showModal()">Cadastrar</button></li>
+                <button class="login" onclick="showModal2()">login</button>
+            </ul>
         </div>
     </header>
     <!-- modal redigter -->

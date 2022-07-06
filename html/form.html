@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- <link rel="stylesheet" href="../styles/index.css"> -->
 <link rel="stylesheet" href="../styles/form.css">
 
 <head>
@@ -9,18 +10,87 @@
     <title>Crie Sua trilha!</title>
 </head>
 
+
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="../assets/logo_transparent_background.svg">
+        </a>
+    </div>
+    <nav>
+        <ul>
+            <h1>"Gerador de trilhas"</h1>
+        </ul>
+    </nav>
+</header>
+
 <body>
-    <div  class="Info">
-        <h1>Pagina em construção</h1>
-    </div>
-    <div class="gifcont">
-        <img class="gif" src="../assets/75rk.gif">
-    </div>
+    <div class="content">
+        <form class="form">
+            <h2>Sobre mim</h2>
+            <p>Informe de 0 a 100 o seu conhecimento atual sobre programação no geral: </p>
 
+            <input type="range" name="vol" value="0" min="0" max="100" oninput="display.value=value"
+                onchange="display.value=value">
+            <input type="text" id="display" value="0" readonly>
 
-    <script>
-        var alert = window.alert("Eae!! pelo visto chegou cedo em? Esta pagina ainda não está concluida!")
-    </script>
+            <p>Voçe conheçe algumas dessas tecnologias ?</p>
+            <div class="box">
+                <input type="checkbox" id="HTML" name="" value="">
+                <label for="HTML"> HTML</label><br>
+                <input type="checkbox" id="CSS" name="" value="">
+                <label for="CSS">CSS</label><br>
+                <input type="checkbox" id="Js" name="" value="">
+                <label for="Js">JavaScript</label><br>
+                <input type="checkbox" id="Ts" name="" value="">
+                <label for="Ts">TypeScript</label><br>
+                <input type="checkbox" id="Js" name="" value="">
+                <label for="Ts">C#</label><br>
+                <input type="checkbox" id="Js" name="" value="">
+                <label for="Ts">Angular</label><br>
+                <input type="checkbox" id="Js" name="" value="">
+                <label for="Ts">React</label><br>
+                <input type="checkbox" id="Js" name="" value="">
+                <label for="Ts">Vue.js</label><br>
+                <input type="checkbox" id="Js" name="" value="">
+                <label for="Ts">MySQL</label><br>
+                <input type="checkbox" id="Js" name="" value="">
+                <label for="Ts">SQL Server</label><br>
+                <input type="checkbox" id="Js" name="" value="">
+                <label for="Ts">PostgreSQL</label><br>
+                <input type="checkbox" id="Js" name="" value="">
+                <label for="Ts">MongoDB</label><br>
+                <input type="checkbox" id="Js" name="" value="">
+                <input type="text" placeholder="Outro">
+            </div>
+            <br>
+            <p>Qual área teria mais facilidade (segundo seu conhecimento):</p>
+            <input type="checkbox" id="Js" name="" value="">
+            <label for="Ts">Front-End</label><br>
+            <input type="checkbox" id="Js" name="" value="">
+            <label for="Ts">Back-End</label><br>
+            <input type="checkbox" id="Js" name="" value="">
+            <label for="Ts">Não sei responder</label><br>
+            <br>
+            <input type="submit" value="Gerar" class="send">
+        </form>
+        <div class="info">
+            <h1>Como funciona ?</h1>
+            <br>
+            <p>
+                Eae!<br>
+                Que bom ter você aqui com a gente, é nesse lugar que vamos obter algumas informações suas para que assim nosso sistema possa gerar uma trilha
+                bem bacana para você.
+                Então, para que você entenda como vai funcionar, nosso sistema vai analisar as respostas do formulário, e bater
+                com nosso Back-End que vai ser programado para fazer uma filtragem levando em consideração seu nível de conhecimento e qual área você gostaria de 
+                seguir.
+                Então fique a vontade e responda com a maior sinceridade possível para que não haja erros.
+
+            </p>
+            <br>
+            <p>Até maise bons estudos!</p>
+        </div>
+    </div>
 </body>
 
 </html>
